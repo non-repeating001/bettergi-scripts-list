@@ -13,7 +13,9 @@ this.clickWithVerification = async function(x, y, targetText, maxRetries = 20) {
         await sleep(400); 
         
         // 验证目标文字是否消失
-        let resList = captureGameRegion().findMulti(ocrRoThis);
+        let captureRegion = captureGameRegion();
+        let resList = captureRegion.findMulti(ocrRoThis);
+        captureRegion.dispose();
         let textFound = false;
         
         if (resList && resList.count > 0) {
@@ -29,7 +31,6 @@ this.clickWithVerification = async function(x, y, targetText, maxRetries = 20) {
         if (!textFound) {
             return true;
         }
-
     }
     
     log.warn(`经过${maxRetries}次点击，文字"${targetText}"仍未消失`);
@@ -40,13 +41,9 @@ this.clickWithVerification = async function(x, y, targetText, maxRetries = 20) {
  * 尝试领取地脉花奖励
  * @returns {Promise<void>}
  */
-this.attemptReward = 
-async function () {
-    const MAX_RETRY = 5;
-
-    // 超时处理
+this.attemptReward = async function (retryCount = 0) {
+    const MAX_RETRY = 3;
     if (retryCount >= MAX_RETRY) {
-        retryCount = 0;
         throw new Error("超过最大重试次数，领取奖励失败");
     }
 
@@ -55,7 +52,9 @@ async function () {
     await sleep(500);
 
     // 识别是否为地脉之花界面
-    let resList = captureGameRegion().findMulti(ocrRoThis); // 使用预定义的ocrRoThis对象
+    let captureRegion = captureGameRegion();
+    let resList = captureRegion.findMulti(ocrRoThis); // 使用预定义的ocrRoThis对象
+    captureRegion.dispose();
     let isValid = false;
     let condensedResin = null;
     let originalResin = null;
@@ -129,8 +128,7 @@ async function () {
         log.info("当前界面不是地脉之花界面，重试");
         await genshin.returnMainUi();
         await sleep(1000);
-        retryCount++;
         await autoNavigateToReward();
-        await attemptReward();
+        await attemptReward(++retryCount);
     }
 }

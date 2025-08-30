@@ -1,0 +1,91 @@
+[
+  {
+    "name": "arg_mode",
+    "type": "select",
+    "label": "运行模式👇",
+    "options": [
+      "最速480矿",
+      "挖指定数目的矿（手动填写）",
+      "挖一段时间（手动填写）",
+      "挖，直到某个时间（手动填写）",
+      "挖所有矿"
+    ]
+  },
+  {
+    "name": "arg_amount",
+    "type": "input-text",
+    "label": "挖矿的数量（例如300）👇\n或持续的分钟数（例如30）👇\n或CST时间点（例如03:55或23:30）👇"
+  },
+  {
+    "name": "exclude_fights",
+    "type": "checkbox",
+    "label": "跳过有战斗👇"
+  },
+  {
+    "name": "exclude_natlan",
+    "type": "checkbox",
+    "label": "不挖纳塔👇"
+  },
+  {
+    "name": "exclude_fontaine_underwater",
+    "type": "checkbox",
+    "label": "不挖枫丹水下👇"
+  },
+  {
+    "name": "exclude_fontaine_terrestrial",
+    "type": "checkbox",
+    "label": "不挖枫丹地上👇"
+  },
+  {
+    "name": "exclude_sumeru",
+    "type": "checkbox",
+    "default": true,
+    "label": "不挖须弥👇"
+  },
+  {
+    "name": "exclude_inazuma",
+    "type": "checkbox",
+    "label": "不挖稻妻👇"
+  },
+  {
+    "name": "exclude_liyue",
+    "type": "checkbox",
+    "label": "不挖璃月👇"
+  },
+  {
+    "name": "exclude_chasm_underground",
+    "type": "checkbox",
+    "label": "不挖层岩巨渊地下矿区👇"
+  },
+  {
+    "name": "exclude_mondstadt",
+    "type": "checkbox",
+    "label": "不挖蒙德👇"
+  },
+  {
+    "name": "exclude_crystal_chunks",
+    "type": "checkbox",
+    "label": "不挖水晶块👇"
+  },
+  {
+    "name": "exclude_condessence_crystals",
+    "type": "checkbox",
+    "label": "不挖萃凝晶👇"
+  },
+  {
+    "name": "exclude_amethyst_lumps",
+    "type": "checkbox",
+    "label": "不挖紫晶块👇"
+  },
+  {
+    "name": "enable_dpi_scaling",
+    "type": "checkbox",
+    "default": true,
+    "label": "自动适配DPI缩放👇"
+  },
+  {
+    "name": "profile_id",
+    "type": "input-text",
+    "label": "（仅多帐号适用）区分帐号的唯一ID"
+  }
+]
