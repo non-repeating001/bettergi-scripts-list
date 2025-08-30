@@ -1,5 +1,5 @@
 {
-  "time": "20250830120401",
+  "time": "20250830214553",
   "url": "https://github.com/babalae/bettergi-scripts-list/archive/refs/heads/main.zip",
   "file": "repo.json",
   "indexes": [
@@ -77087,8 +77087,8 @@
         {
           "name": "AbundantOre",
           "type": "directory",
-          "hash": "b6aa44210e2859b03dc33a10ea9c5142cc99eb63",
-          "version": "0.3",
+          "hash": "7bf6dee0f0ce83a603140ec43ac3fbf399e561fc",
+          "version": "0.4",
           "author": "芝士贝果",
           "authors": [
             {
@@ -77099,7 +77099,7 @@
           "tags": [
             "bgi≥0.49.0"
           ],
-          "lastUpdated": "2025-08-29 12:17:12"
+          "lastUpdated": "2025-08-30 21:45:35"
         },
         {
           "name": "AcceleratedEditionSwitchParty",
@@ -77568,8 +77568,8 @@
         {
           "name": "AutoPickLitter",
           "type": "directory",
-          "hash": "5e59c51c43c0c206192b00d6acf790b1374bccd0",
-          "version": "1.0.1",
+          "hash": "e3d2db2e17d61eaa00b243a7818830c2a2d32ffc",
+          "version": "1.0.3",
           "author": "古又",
           "authors": [
             {
@@ -77578,8 +77578,12 @@
             }
           ],
           "description": "提瓦特杂事（收集）~|~买圣水、抽签、上香、领福利餐、领闪闪礼蛋",
-          "tags": [],
-          "lastUpdated": "2025-08-28 23:56:33"
+          "tags": [
+            "玄学",
+            "收集",
+            "成就"
+          ],
+          "lastUpdated": "2025-08-30 21:37:18"
         },
         {
           "name": "AutoRefinedCondensationResin",
@@ -79153,8 +79157,8 @@
         {
           "name": "铁匠铺",
           "type": "directory",
-          "hash": "edc982477e02e4dcf9af88e9b4f97ba1fe9c0c18",
-          "version": "2.3.0",
+          "hash": "df454410131189c9e974c08f11088cba659566d2",
+          "version": "2.3.1",
           "author": "呱呱z",
           "authors": [
             {
@@ -79177,7 +79181,7 @@
             "精锻用魔矿",
             "模板匹配"
           ],
-          "lastUpdated": "2025-08-29 10:06:00"
+          "lastUpdated": "2025-08-30 21:12:51"
         },
         {
           "name": "领取洞天宝钱和好感",
